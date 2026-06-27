@@ -227,7 +227,7 @@ export default function Home() {
   }
 
   const [categories, setCategories] = useState(() => {
-    const saved = localStorage.getItem('portfolio_skills_categories')
+    const saved = localStorage.getItem('portfolio_skills_categories_v2')
     if (saved) {
       try {
         return JSON.parse(saved)
@@ -243,7 +243,7 @@ export default function Home() {
   const [newSkillIcons, setNewSkillIcons] = useState({})
 
   useEffect(() => {
-    localStorage.setItem('portfolio_skills_categories', JSON.stringify(categories))
+    localStorage.setItem('portfolio_skills_categories_v2', JSON.stringify(categories))
   }, [categories])
 
   useEffect(() => {
@@ -255,7 +255,7 @@ export default function Home() {
   const handleReset = () => {
     if (window.confirm('Are you sure you want to reset all skills and categories to default values? All custom edits will be lost.')) {
       setCategories(INITIAL_SKILL_CATEGORIES)
-      localStorage.removeItem('portfolio_skills_categories')
+      localStorage.removeItem('portfolio_skills_categories_v2')
     }
   }
 

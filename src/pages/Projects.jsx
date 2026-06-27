@@ -79,7 +79,7 @@ const INITIAL_PROJECTS = [
 export default function Projects() {
   const { isAdmin } = useAdmin()
   const [projectsList, setProjectsList] = useState(() => {
-    const saved = localStorage.getItem('portfolio_projects_data')
+    const saved = localStorage.getItem('portfolio_projects_data_v2')
     if (saved) {
       try {
         return JSON.parse(saved)
@@ -95,7 +95,7 @@ export default function Projects() {
   const [isEditing, setIsEditing] = useState(false)
 
   useEffect(() => {
-    localStorage.setItem('portfolio_projects_data', JSON.stringify(projectsList))
+    localStorage.setItem('portfolio_projects_data_v2', JSON.stringify(projectsList))
   }, [projectsList])
 
   useEffect(() => {
@@ -107,7 +107,7 @@ export default function Projects() {
   const handleReset = () => {
     if (window.confirm('Are you sure you want to reset all projects to default values? All custom edits will be lost.')) {
       setProjectsList(INITIAL_PROJECTS)
-      localStorage.removeItem('portfolio_projects_data')
+      localStorage.removeItem('portfolio_projects_data_v2')
     }
   }
 

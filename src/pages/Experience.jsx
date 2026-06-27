@@ -99,7 +99,7 @@ const INITIAL_HOBBIES = [
 export default function Experience() {
   const { isAdmin } = useAdmin()
   const [experiencesList, setExperiencesList] = useState(() => {
-    const saved = localStorage.getItem('portfolio_experiences_data')
+    const saved = localStorage.getItem('portfolio_experiences_data_v2')
     if (saved) {
       try {
         return JSON.parse(saved)
@@ -111,7 +111,7 @@ export default function Experience() {
   })
 
   const [achievementsList, setAchievementsList] = useState(() => {
-    const saved = localStorage.getItem('portfolio_achievements_data')
+    const saved = localStorage.getItem('portfolio_achievements_data_v2')
     if (saved) {
       try {
         return JSON.parse(saved)
@@ -123,7 +123,7 @@ export default function Experience() {
   })
 
   const [hobbiesList, setHobbiesList] = useState(() => {
-    const saved = localStorage.getItem('portfolio_hobbies_data')
+    const saved = localStorage.getItem('portfolio_hobbies_data_v2')
     if (saved) {
       try {
         return JSON.parse(saved)
@@ -140,7 +140,7 @@ export default function Experience() {
 
   // Auto-save changes to localStorage
   useEffect(() => {
-    localStorage.setItem('portfolio_experiences_data', JSON.stringify(experiencesList))
+    localStorage.setItem('portfolio_experiences_data_v2', JSON.stringify(experiencesList))
   }, [experiencesList])
 
   useEffect(() => {
@@ -150,11 +150,11 @@ export default function Experience() {
   }, [isAdmin])
 
   useEffect(() => {
-    localStorage.setItem('portfolio_achievements_data', JSON.stringify(achievementsList))
+    localStorage.setItem('portfolio_achievements_data_v2', JSON.stringify(achievementsList))
   }, [achievementsList])
 
   useEffect(() => {
-    localStorage.setItem('portfolio_hobbies_data', JSON.stringify(hobbiesList))
+    localStorage.setItem('portfolio_hobbies_data_v2', JSON.stringify(hobbiesList))
   }, [hobbiesList])
 
   const handleReset = () => {
@@ -162,9 +162,9 @@ export default function Experience() {
       setExperiencesList(INITIAL_EXPERIENCES)
       setAchievementsList(INITIAL_ACHIEVEMENTS)
       setHobbiesList(INITIAL_HOBBIES)
-      localStorage.removeItem('portfolio_experiences_data')
-      localStorage.removeItem('portfolio_achievements_data')
-      localStorage.removeItem('portfolio_hobbies_data')
+      localStorage.removeItem('portfolio_experiences_data_v2')
+      localStorage.removeItem('portfolio_achievements_data_v2')
+      localStorage.removeItem('portfolio_hobbies_data_v2')
     }
   }
 
