@@ -12,63 +12,64 @@ import { useAdmin } from '../context/AdminContext'
    ==================================== */
 const INITIAL_PROJECTS = [
   {
-    id: 1,
-    title: 'Project Sammati',
-    emoji: '📄',
-    description:
-      'A web application featuring document analysis and multilingual support, enabling users to process and understand documents across multiple languages.',
-    longDescription:
-      'Project Sammati is a comprehensive web application designed for document analysis and multilingual support. It enables users to upload, process, and analyze documents in multiple languages with an intuitive interface. The platform leverages modern NLP techniques to provide accurate translations and insightful document summaries.',
-    tags: ['React', 'Node.js', 'MongoDB', 'NLP', 'Express'],
-    features: [
-      'Document upload and automated analysis pipeline',
-      'Multilingual support with real-time translation',
-      'Intelligent document summarization',
-      'RESTful API architecture with Express.js',
-      'Responsive UI built with React',
-    ],
-    github: '', // INSERT_GITHUB_LINK
-    live: '',   // INSERT_LIVE_LINK
-    image: '',  // INSERT_PROJECT_IMAGE_URL
+    id: 1782379337040,
+    title: 'Zerodha Clone - Using MERN Stack Web development',
+    emoji: '📊',
+    description: 'A MERN stack replication of the Zerodha stock brokerage platform. Features a clean, minimal landing page alongside an interactive user dashboard for real-time stock monitoring, portfolio management, watchlist customization, and instant mock order placement.',
+    longDescription: 'A full-stack, responsive stock trading application clone inspired by Zerodha\'s Kite platform. Built using the MERN stack (MongoDB, Express.js, React, Node.js), it replicates a high-performance trading ecosystem featuring real-time interactive watchlists, dynamic portfolio tracking (holdings and positions), responsive charting, and an absolute state-driven mock order execution engine.',
+    tags: ['HTML', 'CSS', 'Javascript', 'React', 'NodeJS', 'MongoDB', 'ExpressJS'],
+    features: ['Feature 1', 'Feature 2'],
+    github: '',
+    live: '',
+    image: '',
   },
   {
-    id: 2,
-    title: 'Spam Email Detection',
+    id: 1782379781459,
+    title: 'SpamShield AI — Email Spam Detection Using BERT',
     emoji: '🛡️',
-    description:
-      'An NLP mini-project utilizing the Enron Email Dataset and BERT-based models for high-accuracy spam classification.',
-    longDescription:
-      'This NLP project tackles email spam classification using the well-known Enron Email Dataset. It employs BERT-based transformer models fine-tuned for binary classification, achieving high precision and recall. The project demonstrates expertise in natural language understanding, data preprocessing, and model evaluation.',
-    tags: ['NLP', 'BERT', 'Machine Learning', 'Enron Dataset'],
-    features: [
-      'Data preprocessing pipeline for the Enron Email Dataset',
-      'BERT-based transformer model fine-tuning',
-      'High-accuracy spam vs. legitimate classification',
-      'Evaluation with precision, recall, and F1 metrics',
-      'Visualization of model performance and confusion matrix',
-    ],
-    github: '', // INSERT_GITHUB_LINK
-    live: '',   // INSERT_LIVE_LINK
-    image: '',  // INSERT_PROJECT_IMAGE_URL
+    description: 'SpamShield AI is a production-ready, full-stack spam detection platform. It uses a fine-tuned BERT (Bidirectional Encoder Representations from Transformers) model to analyze emails.',
+    longDescription: 'SpamShield AI is a production-ready, full-stack spam detection platform. It uses a fine-tuned BERT (Bidirectional Encoder Representations from Transformers) model to analyze emails with high precision, providing real-time insights into tokenization, lemmatization, and spam indicators.',
+    tags: ['Python', 'FastAPI', 'Uvicorn', 'PyTorch', 'Transformers', 'Scikit-learn', 'NLTK', 'Pandas', 'NumPy'],
+    features: ['Feature 1', 'Feature 2'],
+    github: 'https://github.com/Mayur303/SpamShield---Email-Spam-detection-AI',
+    live: '',
+    image: '',
   },
   {
-    id: 3,
-    /* PLACEHOLDER_PROJECT_3 — Replace with your third project */
-    title: 'Project Three',
+    id: 1782380356037,
+    title: 'EmotiSense AI -  Facial Emotion Recognition (FER) web application built with OpenCV, and DeepFace',
     emoji: '🚀',
-    description:
-      'A placeholder for your third project. Replace this with your actual project details including description, tech stack, and links.',
-    longDescription:
-      'Replace this entire project object with your real project data. Include a thorough description of the problem solved, your approach, and the impact of the project.',
-    tags: ['INSERT_TECH_1', 'INSERT_TECH_2', 'INSERT_TECH_3'],
-    features: [
-      'INSERT_FEATURE_1',
-      'INSERT_FEATURE_2',
-      'INSERT_FEATURE_3',
-    ],
-    github: '', // INSERT_GITHUB_LINK
-    live: '',   // INSERT_LIVE_LINK
-    image: '',  // INSERT_PROJECT_IMAGE_URL
+    description: 'A real-time Facial Emotion Recognition (FER) web application built with FastAPI, React (Vite), OpenCV, and DeepFace.',
+    longDescription: 'Frontend: Captures webcam frames using the HTML5 <video> and Canvas APIs, and streams binary JPEG frames to the backend.\nBackend: Processes incoming frames over WebSockets. Uses OpenCV\'s Haar Cascade for rapid face localization, followed by DeepFace (a deep learning facial recognition framework) to classify emotions into 7 categories.\nDashboard: Receives real-time JSON responses and overlays bounding boxes and emotion probabilities on a sleek, sci-fi themed UI built with Tailwind CSS and Framer Motion.',
+    tags: ['React', 'FarmerMotion', 'Tailwind CSS', 'WebSocket', 'OpenCV', 'VGG-Face', 'Deepface', 'Recharts'],
+    features: ['Feature 1', 'Feature 2'],
+    github: 'https://github.com/Mayur303/Emotisense---Facial-Emotion-Recognition-System',
+    live: 'https://emotisense10.vercel.app/',
+    image: '',
+  },
+  {
+    id: 1782457200715,
+    title: 'VendorVerify – Smart QR Authentication System',
+    emoji: '🚀',
+    description: 'VendorVerify is a secure full-stack QR authentication platform that enables vendors to generate unique QR codes for products, allowing consumers to instantly verify product authenticity and prevent counterfeit goods.',
+    longDescription: 'VendorVerify is a full-stack smart QR authentication platform designed to combat counterfeit products and improve supply chain transparency by enabling secure product verification. The system allows vendors to generate unique, cryptographically secure QR codes linked to individual products or batches, which consumers and verification staff can scan to instantly validate authenticity in real time. It incorporates role-based access control for vendors, consumers, and administrators, along with secure authentication, product management, and centralized monitoring.\n\nThe platform also maintains a comprehensive audit trail by recording every verification attempt, including scan time, location, and verification status, helping detect suspicious activities and enhance security. Built with a scalable architecture and responsive user interface, VendorVerify provides a reliable, efficient, and user-friendly solution for secure product authentication, vendor management, and counterfeit prevention across modern supply chains.',
+    tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'HTML5', 'CSS3', 'JavaScript', 'JWT Authentication', 'bcrypt.js', 'QR Code Generation', 'REST APIs', 'MongoDB Atlas'],
+    features: ['Feature 1', 'Feature 2'],
+    github: 'https://github.com/Mayur303/FSD117-Mayur303',
+    live: '',
+    image: '',
+  },
+  {
+    id: 1782459484726,
+    title: 'Zoom -  full stack video conferencing web application.',
+    emoji: '🚀',
+    description: 'A MERN-based video conferencing application enabling secure, real-time meetings with chat and screen sharing. Developed a Zoom-inspired web application for secure, real-time video conferencing and seamless collaboration.',
+    longDescription: '**Zoom – Full-Stack Video Conferencing Web Application** is a modern, scalable web platform that enables users to host and join secure real-time video meetings with seamless communication and collaboration. The application features user authentication, instant meeting creation, unique meeting links, HD video and audio calling, live chat, screen sharing, participant management, and responsive design to deliver a smooth experience across desktop and mobile devices. Built using the MERN stack with WebRTC and Socket.io for real-time communication, it ensures low-latency connectivity, secure data exchange, and an intuitive user interface for virtual meetings, online collaboration, and remote communication.',
+    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'WebRTC', 'Socket.io', 'JWT Authentication'],
+    features: ['Feature 1', 'Feature 2'],
+    github: '',
+    live: '',
+    image: '',
   },
 ]
 

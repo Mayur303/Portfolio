@@ -44,19 +44,53 @@ const INITIAL_EXPERIENCES = [
    ==================================== */
 const INITIAL_ACHIEVEMENTS = [
   {
-    title: 'Problem Solving',
+    title: 'Programming Problem Solving',
     icon: '🧩',
     items: [
       'Consistent problem solver with strong DSA fundamentals',
-      'Solved competitive programming and LeetCode problems',
+      'Solved 200+ competitive programming and LeetCode problems',
+      'Solved 100+SQL Queries on MS SQL Server at LeetCode platform',
+    ],
+  },
+  {
+    title: 'Innovation Hackathons',
+    icon: '🏆',
+    items: [
+      'Participated in multiple national-level hackathons, developing innovative full-stack solutions and collaborating effectively in team-based problem-solving environments.',
+      'Actively participated in hackathons, building real-world software solutions under tight deadlines while enhancing problem-solving and teamwork skills.',
+    ],
+  },
+  {
+    title: 'Scored At National Level Exams',
+    icon: '🏆',
+    items: [
+      'Achieved 97.38 percentile in the Maharashtra Common Entrance Test (MHT-CET), demonstrating strong aptitude in Physics, Chemistry, and Mathematics.',
+      'Successfully qualified JEE Main, securing a competitive percentile through consistent academic performance.',
     ],
   },
 ]
 
 const INITIAL_HOBBIES = [
-  { name: 'Sudoku', icon: '🔢', description: 'Logical reasoning & pattern recognition' },
-  { name: 'Bingo', icon: '🎯', description: 'Strategic thinking & quick decision making' },
-  { name: 'Badminton', icon: '🏸', description: 'Agility, endurance & team coordination' },
+  {
+    name: 'Building Web Applications',
+    icon: '💻',
+    description: 'Passionate about building scalable, user-centric full-stack web applications that solve real-world problems using modern technologies and clean architecture.',
+  },
+  {
+    name: 'Solving DSA & Coding Challenges',
+    icon: '🧩',
+    description: 'Enjoy solving Data Structures and Algorithms problems to strengthen logical thinking, optimize solutions, and enhance problem-solving skills.',
+  },
+  {
+    name: 'Cycling',
+    icon: '🚴',
+    description: 'Enjoy cycling to stay active, improve endurance, and maintain a healthy balance between work and personal well-being.',
+  },
+  {
+    name: 'Traveling',
+    icon: '✈️',
+    description: 'Enjoy traveling to explore new places, experience diverse cultures, and gain fresh perspectives that inspire creativity and personal growth.',
+  },
 ]
 
 /* ====================================
